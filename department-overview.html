@@ -68,77 +68,42 @@
 </header>
 
 <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
-  <div class="space-y-8">
 
-    <div class="resource-card overflow-hidden flex flex-col">
-      <div class="p-6 flex flex-col gap-4">
-        <div class="icon-badge"><i class="fa-solid fa-book text-lg"></i></div>
-        <div>
-          <h2 class="font-display text-lg font-bold">English Department Overview</h2>
-          <p class="text-sm text-espressoLight">英語科總覽</p>
-        </div>
-        <div class="text-sm text-espressoLight leading-relaxed space-y-1">
-          <p><span class="font-semibold text-espresso">Mr. Jonathan Wardlaw</span> — Head of English, Instructional</p>
-          <p><span class="font-semibold text-espresso">Mr. Brian Zielenski</span> — Head of English, Curriculum</p>
-        </div>
-      </div>
-      <div class="embed-wrap">
-        <iframe src="https://drive.google.com/file/d/1Fc3qO26Wra_fxKa9mLB8tUCFaPaoJfPv/preview" title="English Department Overview slides" loading="lazy" allowfullscreen></iframe>
-      </div>
-    </div>
-
-    <div class="resource-card overflow-hidden flex flex-col">
-      <div class="p-6 flex flex-col gap-4">
-        <div class="icon-badge"><i class="fa-solid fa-calculator text-lg"></i></div>
-        <div>
-          <h2 class="font-display text-lg font-bold">Math Department Overview</h2>
-          <p class="text-sm text-espressoLight">數學科總覽</p>
-        </div>
-        <div class="text-sm text-espressoLight leading-relaxed space-y-1">
-          <p><span class="font-semibold text-espresso">Ms. Jessica McAnnally-Linz</span> — Head of Math, Instructional</p>
-          <p><span class="font-semibold text-espresso">Ms. Manisha Sharma</span> — Head of Math, Curriculum</p>
-        </div>
-      </div>
-      <div class="embed-wrap">
-        <iframe src="https://drive.google.com/file/d/1R6pvAZv7mga7YsMkmQ3khlBDo6Idbc9y/preview" title="Math Department Overview slides" loading="lazy" allowfullscreen></iframe>
-      </div>
-    </div>
-
-    <div class="resource-card overflow-hidden flex flex-col">
-      <div class="p-6 flex flex-col gap-4">
-        <div class="icon-badge"><i class="fa-solid fa-flask text-lg"></i></div>
-        <div>
-          <h2 class="font-display text-lg font-bold">Science Department Overview</h2>
-          <p class="text-sm text-espressoLight">自然科總覽</p>
-        </div>
-        <div class="text-sm text-espressoLight leading-relaxed space-y-1">
-          <p><span class="font-semibold text-espresso">Mr. Neil Wade</span> — Head of Science, Instructional</p>
-          <p><span class="font-semibold text-espresso">Ms. Cecile G. De Vera</span> — Head of Science, Curriculum</p>
-        </div>
-      </div>
-      <div class="embed-wrap">
-        <iframe src="https://drive.google.com/file/d/1UM_BMElndkiuOZfw8vEEn1oFoDP3NB5W/preview" title="Science Department Overview slides" loading="lazy" allowfullscreen></iframe>
-      </div>
-    </div>
-
-    <div class="resource-card overflow-hidden flex flex-col">
-      <div class="p-6 flex flex-col gap-4">
-        <div class="icon-badge"><i class="fa-solid fa-earth-asia text-lg"></i></div>
-        <div>
-          <h2 class="font-display text-lg font-bold">Social Studies Overview</h2>
-          <p class="text-sm text-espressoLight">社會科總覽</p>
-        </div>
-        <div class="text-sm text-espressoLight leading-relaxed space-y-1">
-          <p><span class="font-semibold text-espresso">Mr. Tim Rose</span> — Head of Social Studies, Instructional</p>
-          <p><span class="font-semibold text-espresso">Mr. Evan Lampe</span> — Head of Social Studies, Curriculum</p>
-        </div>
-      </div>
-      <div class="embed-wrap">
-        <iframe src="https://drive.google.com/file/d/1kp56ld57SwUuKQT1Tjxw-JFhpK90I-my/preview" title="Social Studies Overview slides" loading="lazy" allowfullscreen></iframe>
-      </div>
-    </div>
-
+  <div data-tab-group data-panel-target="#dept-panel" class="flex flex-wrap gap-3 mb-6">
+    <button type="button" class="tab-btn"
+      data-title="English Department Overview" data-subtitle="英語科總覽"
+      data-staff="<p><span class='font-semibold text-espresso'>Mr. Jonathan Wardlaw</span> — Head of English, Instructional</p><p><span class='font-semibold text-espresso'>Mr. Brian Zielenski</span> — Head of English, Curriculum</p>"
+      data-embed="https://drive.google.com/file/d/1Fc3qO26Wra_fxKa9mLB8tUCFaPaoJfPv/preview">
+      <span class="icon-badge w-11 h-11 rounded-xl"><i class="fa-solid fa-book text-base"></i></span>
+      <span class="tab-label">English Department</span>
+    </button>
+    <button type="button" class="tab-btn"
+      data-title="Math Department Overview" data-subtitle="數學科總覽"
+      data-staff="<p><span class='font-semibold text-espresso'>Ms. Jessica McAnnally-Linz</span> — Head of Math, Instructional</p><p><span class='font-semibold text-espresso'>Ms. Manisha Sharma</span> — Head of Math, Curriculum</p>"
+      data-embed="https://drive.google.com/file/d/1R6pvAZv7mga7YsMkmQ3khlBDo6Idbc9y/preview">
+      <span class="icon-badge w-11 h-11 rounded-xl"><i class="fa-solid fa-calculator text-base"></i></span>
+      <span class="tab-label">Math Department</span>
+    </button>
+    <button type="button" class="tab-btn"
+      data-title="Science Department Overview" data-subtitle="自然科總覽"
+      data-staff="<p><span class='font-semibold text-espresso'>Mr. Neil Wade</span> — Head of Science, Instructional</p><p><span class='font-semibold text-espresso'>Ms. Cecile G. De Vera</span> — Head of Science, Curriculum</p>"
+      data-embed="https://drive.google.com/file/d/1UM_BMElndkiuOZfw8vEEn1oFoDP3NB5W/preview">
+      <span class="icon-badge w-11 h-11 rounded-xl"><i class="fa-solid fa-flask text-base"></i></span>
+      <span class="tab-label">Science Department</span>
+    </button>
+    <button type="button" class="tab-btn"
+      data-title="Social Studies Overview" data-subtitle="社會科總覽"
+      data-staff="<p><span class='font-semibold text-espresso'>Mr. Tim Rose</span> — Head of Social Studies, Instructional</p><p><span class='font-semibold text-espresso'>Mr. Evan Lampe</span> — Head of Social Studies, Curriculum</p>"
+      data-embed="https://drive.google.com/file/d/1kp56ld57SwUuKQT1Tjxw-JFhpK90I-my/preview">
+      <span class="icon-badge w-11 h-11 rounded-xl"><i class="fa-solid fa-earth-asia text-base"></i></span>
+      <span class="tab-label">Social Studies Department</span>
+    </button>
   </div>
+
+  <div id="dept-panel" class="resource-card">
+    <p class="tab-panel-placeholder">Select a department above to view its course overview<br>請點選上方部門查看課程總覽</p>
+  </div>
+
 </main>
 
 <footer class="bg-espresso text-cream/90">
@@ -155,5 +120,6 @@
 </footer>
 
 <script src="assets/nav.js"></script>
+<script src="assets/tabs.js"></script>
 </body>
 </html>

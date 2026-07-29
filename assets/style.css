@@ -102,13 +102,18 @@ body {
   color: var(--copper-dark);
 }
 
-/* Hero */
+/* Hero — dark navy with white text */
 .hero-bg {
   background:
-    radial-gradient(circle at 12% 18%, rgba(62, 109, 153, 0.12), transparent 45%),
-    radial-gradient(circle at 88% 12%, rgba(28, 53, 82, 0.10), transparent 40%),
-    var(--cream);
+    radial-gradient(circle at 12% 18%, rgba(62, 109, 153, 0.35), transparent 45%),
+    radial-gradient(circle at 88% 12%, rgba(62, 109, 153, 0.25), transparent 40%),
+    var(--espresso) !important;
 }
+.hero-bg .section-kicker { color: rgba(255, 255, 255, 0.8) !important; }
+.hero-bg h1 { color: #fff !important; }
+.hero-bg p.font-display,
+.hero-bg p.text-copperDark { color: #BFD6EA !important; }
+.hero-bg p:not(.font-display) { color: rgba(255, 255, 255, 0.85) !important; }
 
 /* Scrollbar-less chip row */
 .no-scrollbar::-webkit-scrollbar { display: none; }
@@ -138,6 +143,40 @@ body {
   border-style: solid !important;
   background: var(--latte) !important;
   color: var(--espresso-light) !important;
+}
+
+/* Tab selector (Department Overview / AP Courses) */
+.tab-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--card);
+  border: 1px solid var(--latte);
+  border-radius: 1rem;
+  padding: 1.1rem 0.75rem;
+  cursor: pointer;
+  transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+  flex: 1 1 130px;
+  text-align: center;
+  font-family: inherit;
+}
+.tab-btn:hover { transform: translateY(-2px); }
+.tab-btn.active {
+  border-color: var(--copper);
+  box-shadow: 0 0 0 1px var(--copper);
+}
+.tab-btn span.tab-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--espresso);
+}
+.tab-panel-placeholder {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--espresso-light);
+  text-align: center;
+  padding: 2rem 1.5rem;
 }
 
 .embed-placeholder {
