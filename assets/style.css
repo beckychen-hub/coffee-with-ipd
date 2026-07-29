@@ -5,8 +5,8 @@
   --espresso-light: #2E4F73;
   --cream: #EEF1F4;
   --card: #FFFFFF;
-  --copper: #8B2635;
-  --copper-dark: #6E1E2B;
+  --copper: #3E6D99;
+  --copper-dark: #2C516F;
   --latte: #D7DEE5;
 }
 
@@ -105,7 +105,7 @@ body {
 /* Hero */
 .hero-bg {
   background:
-    radial-gradient(circle at 12% 18%, rgba(139, 38, 53, 0.12), transparent 45%),
+    radial-gradient(circle at 12% 18%, rgba(62, 109, 153, 0.12), transparent 45%),
     radial-gradient(circle at 88% 12%, rgba(28, 53, 82, 0.10), transparent 40%),
     var(--cream);
 }
@@ -152,5 +152,5 @@ body {
   font-size: 0.8rem;
   text-align: center;
   padding: 1rem;
-  border-top: 1px dashed rgba(139, 38, 53, 0.4);
+  border-top: 1px dashed rgba(62, 109, 153, 0.4);
 }
