@@ -37,11 +37,11 @@
         <span class="font-display font-bold text-lg text-espresso tracking-wide whitespace-nowrap">Coffee with IPD</span>
       </a>
       <div class="hidden xl:flex items-center gap-1">
-        <a href="index.html" class="nav-link whitespace-nowrap font-semibold text-xs uppercase tracking-wide px-3 py-2">Home 首頁</a>
-        <a href="department-overview.html" class="nav-link whitespace-nowrap font-semibold text-xs uppercase tracking-wide px-3 py-2">Department Overview 部門總覽</a>
-        <a href="ap-courses.html" class="nav-link active whitespace-nowrap font-semibold text-xs uppercase tracking-wide px-3 py-2">AP Courses AP 課程</a>
-        <a href="map-report.html" class="nav-link whitespace-nowrap font-semibold text-xs uppercase tracking-wide px-3 py-2">MAP Report MAP 報告</a>
-        <a href="last-year-review.html" class="nav-link whitespace-nowrap font-semibold text-xs uppercase tracking-wide px-3 py-2">Last Year Review 去年度回顧</a>
+        <a href="index.html" class="nav-link whitespace-nowrap flex flex-col items-center leading-tight font-semibold text-xs uppercase tracking-wide px-3 py-2"><span>Home</span><span class="text-[0.65rem] normal-case tracking-normal opacity-75">首頁</span></a>
+        <a href="department-overview.html" class="nav-link whitespace-nowrap flex flex-col items-center leading-tight font-semibold text-xs uppercase tracking-wide px-3 py-2"><span>Department Overview</span><span class="text-[0.65rem] normal-case tracking-normal opacity-75">部門總覽</span></a>
+        <a href="ap-courses.html" class="nav-link active whitespace-nowrap flex flex-col items-center leading-tight font-semibold text-xs uppercase tracking-wide px-3 py-2"><span>AP Courses</span><span class="text-[0.65rem] normal-case tracking-normal opacity-75">AP 課程</span></a>
+        <a href="map-report.html" class="nav-link whitespace-nowrap flex flex-col items-center leading-tight font-semibold text-xs uppercase tracking-wide px-3 py-2"><span>MAP Report</span><span class="text-[0.65rem] normal-case tracking-normal opacity-75">MAP 報告</span></a>
+        <a href="last-year-review.html" class="nav-link whitespace-nowrap flex flex-col items-center leading-tight font-semibold text-xs uppercase tracking-wide px-3 py-2"><span>Last Year Review</span><span class="text-[0.65rem] normal-case tracking-normal opacity-75">去年度回顧</span></a>
       </div>
       <button id="mobile-nav-toggle" class="xl:hidden text-espresso" aria-label="Toggle navigation" aria-expanded="false">
         <i class="fa-solid fa-bars text-xl"></i>
@@ -67,35 +67,121 @@
   </div>
 </header>
 
-<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+<main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+  <div class="space-y-8">
 
-  <!-- Qualification procedures — highlighted -->
-  <div class="resource-card p-6 sm:p-8 flex flex-col sm:flex-row sm:items-center gap-6 mb-8 border-copper/40">
-    <div class="icon-badge w-16 h-16 rounded-2xl"><i class="fa-solid fa-clipboard-check text-2xl"></i></div>
-    <div class="flex-1">
-      <span class="grade-pill mb-2"><i class="fa-solid fa-user-graduate"></i> G9–G12 Students &amp; Parents</span>
-      <h2 class="font-display text-xl font-bold mt-2">SY26-27 AP Qualification &amp; Course Placement Procedures</h2>
-      <p class="text-sm text-espressoLight mb-2">115 學年 AP 選課資格與流程</p>
-      <p class="text-sm text-espressoLight"><span class="font-semibold text-espresso">黃思雅 Sia Huang</span> — AP Coordinator</p>
+    <div class="resource-card overflow-hidden flex flex-col">
+      <div class="p-6 flex flex-col gap-4">
+        <div class="flex items-start justify-between gap-4">
+          <div class="icon-badge"><i class="fa-solid fa-clipboard-check text-lg"></i></div>
+          <span class="grade-pill"><i class="fa-solid fa-user-graduate"></i> G9–G12 Students &amp; Parents</span>
+        </div>
+        <div>
+          <h2 class="font-display text-lg font-bold">SY26-27 AP Qualification &amp; Course Placement Procedures</h2>
+          <p class="text-sm text-espressoLight">115 學年 AP 選課資格與流程</p>
+        </div>
+        <p class="text-sm text-espressoLight"><span class="font-semibold text-espresso">黃思雅 Sia Huang</span> — AP Coordinator</p>
+      </div>
+      <div class="embed-wrap">
+        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQVI9QWJv047szu04tdR240vGGuSqSGOIx6P-_GBvrog-zqnK4DwIT90E3Y_jMwRs2tOOaHh1ETe_6G/pubembed?start=true&loop=true&delayms=10000" title="SY26-27 AP Qualification and Course Placement Procedures slides" loading="lazy" allowfullscreen></iframe>
+      </div>
     </div>
-    <a href="https://drive.google.com/drive/u/3/folders/1QMY8nU3gZ4OtbZIcETyJZtOrRSO7nQ96" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 bg-copper hover:bg-copperDark text-white font-semibold text-sm rounded-full px-5 py-2.5 transition-colors flex-shrink-0">
-      <i class="fa-regular fa-folder-open"></i> View Folder 查看資料夾
-    </a>
-  </div>
 
-  <div class="resource-card p-8 sm:p-10 flex flex-col sm:flex-row items-center gap-8 bg-espresso border-espresso text-cream">
-    <div class="icon-badge w-16 h-16 rounded-2xl bg-cream/10 flex-shrink-0"><i class="fa-solid fa-book-open-reader text-2xl"></i></div>
-    <div class="flex-1 text-center sm:text-left">
-      <h2 class="font-display text-2xl font-bold mb-1">Full AP Course Guide</h2>
-      <p class="text-cream/70 mb-3">完整 AP 課程手冊</p>
-      <p class="text-sm text-cream/80 leading-relaxed max-w-xl">
-        Course-by-course breakdowns, qualification criteria, and placement guidance for every AP subject — in one dedicated site.<br>
-        每一門 AP 課程的詳細內容、選課資格與分班說明，完整收錄在專屬網站中。
-      </p>
+    <div class="resource-card overflow-hidden flex flex-col">
+      <div class="p-6 flex flex-col gap-4">
+        <div class="flex items-start justify-between gap-4">
+          <div class="icon-badge"><i class="fa-solid fa-book text-lg"></i></div>
+          <span class="grade-pill"><i class="fa-solid fa-user-graduate"></i> G9–G12</span>
+        </div>
+        <div>
+          <h4 class="font-display text-lg font-bold">AP English Course Selection</h4>
+          <p class="text-sm text-espressoLight">英文科 AP 課程說明</p>
+        </div>
+        <div class="text-sm text-espressoLight leading-relaxed space-y-1">
+          <p><span class="font-semibold text-espresso">Mr. Jonathan Wardlaw</span> — Head of English, Instructional</p>
+          <p><span class="font-semibold text-espresso">Mr. Brian Zielenski</span> — Head of English, Curriculum</p>
+        </div>
+      </div>
+      <div class="embed-wrap">
+        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTdKpiUEqmFlZMZ6yBAS5U58rx2yEIBQjlE9ZC9dJEwJIPoXGLU-8QOvgFY4CI6gg/pubembed?start=true&loop=true&delayms=10000" title="AP English Course Selection slides" loading="lazy" allowfullscreen></iframe>
+      </div>
     </div>
-    <a href="https://testing-ap-course.vercel.app/" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 bg-copper hover:bg-copperDark text-white font-semibold text-sm rounded-full px-6 py-3 transition-colors flex-shrink-0 whitespace-nowrap">
-      View Full Guide 查看完整手冊 <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
-    </a>
+
+    <div class="resource-card overflow-hidden flex flex-col">
+      <div class="p-6 flex flex-col gap-4">
+        <div class="flex items-start justify-between gap-4">
+          <div class="icon-badge"><i class="fa-solid fa-calculator text-lg"></i></div>
+          <span class="grade-pill"><i class="fa-solid fa-user-graduate"></i> G9–G12</span>
+        </div>
+        <div>
+          <h4 class="font-display text-lg font-bold">AP Math Course Selection</h4>
+          <p class="text-sm text-espressoLight">數學科 AP 課程說明</p>
+        </div>
+        <div class="text-sm text-espressoLight leading-relaxed space-y-1">
+          <p><span class="font-semibold text-espresso">Ms. Jessica McAnnally-Linz</span> — Head of Math, Instructional</p>
+          <p><span class="font-semibold text-espresso">Ms. Manisha Sharma</span> — Head of Math, Curriculum</p>
+        </div>
+      </div>
+      <div class="embed-wrap">
+        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTWPcL6A8GH7ThQyO573SZwK0LQ5j6PZZK3onkkaW7NKd3Ebb3zldNR97PBDCKBYw/pubembed?start=true&loop=true&delayms=10000" title="AP Math Course Selection slides" loading="lazy" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="resource-card overflow-hidden flex flex-col">
+      <div class="p-6 flex flex-col gap-4">
+        <div class="flex items-start justify-between gap-4">
+          <div class="icon-badge"><i class="fa-solid fa-flask text-lg"></i></div>
+          <span class="grade-pill"><i class="fa-solid fa-user-graduate"></i> G9–G12</span>
+        </div>
+        <div>
+          <h4 class="font-display text-lg font-bold">AP Science Course Selection</h4>
+          <p class="text-sm text-espressoLight">自然科 AP 課程說明</p>
+        </div>
+        <div class="text-sm text-espressoLight leading-relaxed space-y-1">
+          <p><span class="font-semibold text-espresso">Mr. Neil Wade</span> — Head of Science, Instructional</p>
+          <p><span class="font-semibold text-espresso">Ms. Cecile G. De Vera</span> — Head of Science, Curriculum</p>
+        </div>
+      </div>
+      <div class="embed-wrap">
+        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vREsnHo4j8f38POprOxTY8NZu32vGKQJvulectLQaixOJIeI8a2A5XMUOpcmFjipQ/pubembed?start=true&loop=true&delayms=10000" title="AP Science Course Selection slides" loading="lazy" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="resource-card overflow-hidden flex flex-col">
+      <div class="p-6 flex flex-col gap-4">
+        <div class="flex items-start justify-between gap-4">
+          <div class="icon-badge"><i class="fa-solid fa-earth-asia text-lg"></i></div>
+          <span class="grade-pill"><i class="fa-solid fa-user-graduate"></i> G9–G12</span>
+        </div>
+        <div>
+          <h4 class="font-display text-lg font-bold">AP Social Studies Course Selection</h4>
+          <p class="text-sm text-espressoLight">社會科 AP 課程說明</p>
+        </div>
+        <div class="text-sm text-espressoLight leading-relaxed space-y-1">
+          <p><span class="font-semibold text-espresso">Mr. Tim Rose</span> — Head of Social Studies, Instructional</p>
+          <p><span class="font-semibold text-espresso">Mr. Evan Lampe</span> — Head of Social Studies, Curriculum</p>
+        </div>
+      </div>
+      <div class="embed-wrap">
+        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS_GnYllq9TEKT9VOOOwVIFEdRwTCFHERS9w5AE9PBhyZKk-zS5DYZi5hwkkb1EFA/pubembed?start=true&loop=true&delayms=10000" title="AP Social Studies Course Selection slides" loading="lazy" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="resource-card p-8 flex flex-col sm:flex-row items-center gap-6 bg-espresso border-espresso text-cream">
+      <div class="icon-badge w-14 h-14 rounded-2xl bg-cream/10 flex-shrink-0"><i class="fa-solid fa-book-open-reader text-xl"></i></div>
+      <div class="flex-1 text-center sm:text-left">
+        <h2 class="font-display text-xl font-bold mb-1">Full AP Course Guide</h2>
+        <p class="text-cream/70 mb-2 text-sm">完整 AP 課程手冊</p>
+        <p class="text-sm text-cream/80 leading-relaxed">
+          Course-by-course breakdowns, qualification criteria, and placement guidance for every AP subject — in one dedicated site.<br>
+          每一門 AP 課程的詳細內容、選課資格與分班說明，完整收錄在專屬網站中。
+        </p>
+      </div>
+      <a href="https://testing-ap-course.vercel.app/" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 bg-copper hover:bg-copperDark text-white font-semibold text-sm rounded-full px-5 py-2.5 transition-colors flex-shrink-0 whitespace-nowrap">
+        View Full Guide 查看完整手冊 <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+      </a>
+    </div>
+
   </div>
 </main>
 
