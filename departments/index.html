@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Coffee with IPD | 國際處咖啡會 — Kang Chiao International School, Linkou</title>
-<meta name="description" content="Coffee with IPD: information for parents on the schedule, department overviews, AP courses, MAP reports, and last year's review, at Kang Chiao International School, Linkou Campus.">
+<title>Department Overview 部門總覽 | Coffee with IPD</title>
+<meta name="description" content="Meet the English, Math, Science, and Social Studies department leads at Kang Chiao International School, Linkou Campus.">
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"
       integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -14,13 +14,8 @@
     theme: {
       extend: {
         colors: {
-          espresso: '#3C2A1E',
-          espressoLight: '#5A3E2B',
-          cream: '#EDECE8',
-          card: '#FFFFFF',
-          copper: '#5A3E2B',
-          copperDark: '#3C2A1E',
-          latte: '#DAD8D2',
+          espresso: '#3C2A1E', espressoLight: '#5A3E2B', cream: '#EDECE8',
+          card: '#FFFFFF', copper: '#5A3E2B', copperDark: '#3C2A1E', latte: '#DAD8D2',
         }
       }
     }
@@ -29,7 +24,6 @@
 </head>
 <body class="bg-cream text-espresso antialiased min-h-screen">
 
-<!-- Navigation -->
 <nav id="site-nav" class="fixed w-full z-40 transition-shadow">
   <div class="bg-cream border-b border-latte">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -48,9 +42,9 @@
   <div class="hidden xl:block bg-cream border-b border-latte">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-center gap-1">
-        <a href="/" class="nav-link active whitespace-nowrap flex flex-col items-center leading-tight font-semibold text-xs tracking-wide px-3 py-2"><span>Home</span><span class="text-[0.65rem] normal-case tracking-normal opacity-75">首頁</span></a>
+        <a href="/" class="nav-link whitespace-nowrap flex flex-col items-center leading-tight font-semibold text-xs tracking-wide px-3 py-2"><span>Home</span><span class="text-[0.65rem] normal-case tracking-normal opacity-75">首頁</span></a>
         <a href="/schedule" class="nav-link whitespace-nowrap flex flex-col items-center leading-tight font-semibold text-xs tracking-wide px-3 py-2"><span>Schedule</span><span class="text-[0.65rem] normal-case tracking-normal opacity-75">場次預告</span></a>
-        <a href="/departments" class="nav-link whitespace-nowrap flex flex-col items-center leading-tight font-semibold text-xs tracking-wide px-3 py-2"><span>Department Overview</span><span class="text-[0.65rem] normal-case tracking-normal opacity-75">部門總覽</span></a>
+        <a href="/departments" class="nav-link active whitespace-nowrap flex flex-col items-center leading-tight font-semibold text-xs tracking-wide px-3 py-2"><span>Department Overview</span><span class="text-[0.65rem] normal-case tracking-normal opacity-75">部門總覽</span></a>
         <a href="/ap-courses" class="nav-link whitespace-nowrap flex flex-col items-center leading-tight font-semibold text-xs tracking-wide px-3 py-2"><span>AP Courses</span><span class="text-[0.65rem] normal-case tracking-normal opacity-75">AP 課程</span></a>
         <a href="/map-report" class="nav-link whitespace-nowrap flex flex-col items-center leading-tight font-semibold text-xs tracking-wide px-3 py-2"><span>MAP Report</span><span class="text-[0.65rem] normal-case tracking-normal opacity-75">MAP 報告</span></a>
         <a href="/review" class="nav-link whitespace-nowrap flex flex-col items-center leading-tight font-semibold text-xs tracking-wide px-3 py-2"><span>Last Year Review</span><span class="text-[0.65rem] normal-case tracking-normal opacity-75">去年度回顧</span></a>
@@ -59,9 +53,9 @@
   </div>
   <div id="mobile-nav" class="xl:hidden border-t border-latte bg-cream">
     <div class="px-4 py-3 flex flex-col gap-1">
-      <a href="/" class="nav-link active font-semibold text-sm px-2 py-2">Home 首頁</a>
+      <a href="/" class="nav-link font-semibold text-sm px-2 py-2">Home 首頁</a>
       <a href="/schedule" class="nav-link font-semibold text-sm px-2 py-2">Schedule 場次預告</a>
-      <a href="/departments" class="nav-link font-semibold text-sm px-2 py-2">Department Overview 部門總覽</a>
+      <a href="/departments" class="nav-link active font-semibold text-sm px-2 py-2">Department Overview 部門總覽</a>
       <a href="/ap-courses" class="nav-link font-semibold text-sm px-2 py-2">AP Courses AP 課程</a>
       <a href="/map-report" class="nav-link font-semibold text-sm px-2 py-2">MAP Report and Analysis MAP 報告與分析</a>
       <a href="/review" class="nav-link font-semibold text-sm px-2 py-2">Last Year Review 去年度回顧</a>
@@ -69,61 +63,45 @@
   </div>
 </nav>
 
-<!-- Hero -->
 <header class="hero-bg pt-32 pb-24 px-4 sm:px-6 lg:px-8">
   <div class="max-w-4xl mx-auto text-center">
-    <span class="section-kicker justify-center mb-4"><i class="fa-solid fa-mug-saucer"></i> Kang Chiao International School, Linkou Campus</span>
-    <h1 class="font-display text-4xl sm:text-5xl font-bold mb-2 text-espresso italic">Coffee with IPD</h1>
-    <p class="text-2xl sm:text-3xl font-display text-copperDark mb-8 italic">國際處咖啡會</p>
-    <p class="text-base sm:text-lg text-espressoLight leading-relaxed max-w-2xl mx-auto mb-2 italic">
-      In the hope of helping parents better understand student learning objectives, Coffee with IPD aims to shed light on our program and provide related information for parents based on different grade levels and subjects.
-    </p>
-    <p class="text-base sm:text-lg text-espressoLight leading-relaxed max-w-2xl mx-auto mb-8 italic">
-      為了幫助家長更好地了解學生的學習目標，國際處咖啡會旨在闡明我們的課程規劃，並且根據不同年級和科目為家長提供相關的資訊。
-    </p>
-    <a href="/schedule" class="inline-flex items-center gap-2 bg-copper hover:bg-copperDark text-white font-semibold text-sm rounded-full px-6 py-3 transition-colors">
-      Get Started! 立即開始 <i class="fa-solid fa-arrow-down text-xs"></i>
-    </a>
+    <span class="section-kicker justify-center mb-4">🏛️ G7–G12 Students &amp; Parents</span>
+    <h1 class="font-display text-4xl font-bold mb-1">Department Overview</h1>
+    <p class="text-2xl font-display text-copperDark">部門總覽</p>
   </div>
 </header>
 
-<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-  <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-20">
+  <p class="text-center text-sm text-espressoLight mb-8">Select a department below to view its course overview<br>請點選下方部門查看課程總覽</p>
+  <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
 
-    <a href="/schedule" class="resource-card p-5 flex flex-col items-center text-center gap-2">
-      <div class="icon-badge"><i class="fa-solid fa-calendar-days text-lg"></i></div>
-      <span class="font-display font-bold text-sm">Schedule</span>
-      <span class="text-xs text-espressoLight">咖啡會場次預告</span>
+    <a href="/departments/english" class="resource-card p-5 flex flex-col items-center text-center gap-2">
+      <span class="icon-badge w-11 h-11 rounded-xl"><i class="fa-solid fa-book text-base"></i></span>
+      <span class="font-display font-bold text-sm">English Department</span>
+      <span class="text-xs text-espressoLight">英語科</span>
     </a>
 
-    <a href="/departments" class="resource-card p-5 flex flex-col items-center text-center gap-2">
-      <div class="icon-badge text-lg">🏛️</div>
-      <span class="font-display font-bold text-sm">Department Overview</span>
-      <span class="text-xs text-espressoLight">部門總覽</span>
+    <a href="/departments/math" class="resource-card p-5 flex flex-col items-center text-center gap-2">
+      <span class="icon-badge w-11 h-11 rounded-xl"><i class="fa-solid fa-calculator text-base"></i></span>
+      <span class="font-display font-bold text-sm">Math Department</span>
+      <span class="text-xs text-espressoLight">數學科</span>
     </a>
 
-    <a href="/ap-courses" class="resource-card p-5 flex flex-col items-center text-center gap-2">
-      <div class="icon-badge"><i class="fa-solid fa-graduation-cap text-lg"></i></div>
-      <span class="font-display font-bold text-sm">AP Courses</span>
-      <span class="text-xs text-espressoLight">AP 課程</span>
+    <a href="/departments/science" class="resource-card p-5 flex flex-col items-center text-center gap-2">
+      <span class="icon-badge w-11 h-11 rounded-xl"><i class="fa-solid fa-flask text-base"></i></span>
+      <span class="font-display font-bold text-sm">Science Department</span>
+      <span class="text-xs text-espressoLight">自然科</span>
     </a>
 
-    <a href="/map-report" class="resource-card p-5 flex flex-col items-center text-center gap-2">
-      <div class="icon-badge"><i class="fa-solid fa-chart-line text-lg"></i></div>
-      <span class="font-display font-bold text-sm">MAP Report</span>
-      <span class="text-xs text-espressoLight">MAP 報告與分析</span>
-    </a>
-
-    <a href="/review" class="resource-card p-5 flex flex-col items-center text-center gap-2">
-      <div class="icon-badge"><i class="fa-solid fa-clock-rotate-left text-lg"></i></div>
-      <span class="font-display font-bold text-sm">Last Year Review</span>
-      <span class="text-xs text-espressoLight">去年度回顧</span>
+    <a href="/departments/social-studies" class="resource-card p-5 flex flex-col items-center text-center gap-2">
+      <span class="icon-badge w-11 h-11 rounded-xl"><i class="fa-solid fa-earth-asia text-base"></i></span>
+      <span class="font-display font-bold text-sm">Social Studies</span>
+      <span class="text-xs text-espressoLight">社會科</span>
     </a>
 
   </div>
 </main>
 
-<!-- Footer -->
 <footer class="bg-espresso text-cream/90">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 text-center">
     <div class="font-display text-lg font-bold text-cream mb-1">Kang Chiao International School, Linkou Campus</div>

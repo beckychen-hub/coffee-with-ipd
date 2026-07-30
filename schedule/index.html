@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Schedule 咖啡會場次預告 | Coffee with IPD</title>
+<meta name="description" content="Upcoming Coffee with IPD session dates, sign-up links, and feedback surveys at Kang Chiao International School, Linkou Campus.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"
+      integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous" referrerpolicy="no-referrer">
+<link rel="stylesheet" href="/assets/style.css">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          espresso: '#3C2A1E', espressoLight: '#5A3E2B', cream: '#EDECE8',
+          card: '#FFFFFF', copper: '#5A3E2B', copperDark: '#3C2A1E', latte: '#DAD8D2',
+        }
+      }
+    }
+  }
+</script>
+</head>
+<body class="bg-cream text-espresso antialiased min-h-screen">
+
+<nav id="site-nav" class="fixed w-full z-40 transition-shadow">
+  <div class="bg-cream border-b border-latte">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center py-3">
+        <div class="w-8 flex-shrink-0 xl:hidden" aria-hidden="true"></div>
+        <a href="/" class="flex-1 flex items-center justify-center gap-2 sm:gap-3 min-w-0">
+          <img src="https://drive.google.com/thumbnail?id=14y7xTZLZqIOGmyDvJZmwi8trL5fXpQQ_&sz=w200" referrerpolicy="no-referrer" alt="Kang Chiao International School, Linkou Campus" class="h-8 w-auto flex-shrink-0">
+          <span class="font-display font-bold text-base sm:text-lg text-espresso tracking-wide truncate">Coffee with IPD 與國際處喝咖啡</span>
+        </a>
+        <button id="mobile-nav-toggle" class="w-8 flex-shrink-0 xl:hidden text-espresso flex justify-end" aria-label="Toggle navigation" aria-expanded="false">
+          <i class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="hidden xl:block bg-cream border-b border-latte">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-center gap-1">
+        <a href="/" class="nav-link whitespace-nowrap flex flex-col items-center leading-tight font-semibold text-xs tracking-wide px-3 py-2"><span>Home</span><span class="text-[0.65rem] normal-case tracking-normal opacity-75">首頁</span></a>
+        <a href="/schedule" class="nav-link active whitespace-nowrap flex flex-col items-center leading-tight font-semibold text-xs tracking-wide px-3 py-2"><span>Schedule</span><span class="text-[0.65rem] normal-case tracking-normal opacity-75">場次預告</span></a>
+        <a href="/departments" class="nav-link whitespace-nowrap flex flex-col items-center leading-tight font-semibold text-xs tracking-wide px-3 py-2"><span>Department Overview</span><span class="text-[0.65rem] normal-case tracking-normal opacity-75">部門總覽</span></a>
+        <a href="/ap-courses" class="nav-link whitespace-nowrap flex flex-col items-center leading-tight font-semibold text-xs tracking-wide px-3 py-2"><span>AP Courses</span><span class="text-[0.65rem] normal-case tracking-normal opacity-75">AP 課程</span></a>
+        <a href="/map-report" class="nav-link whitespace-nowrap flex flex-col items-center leading-tight font-semibold text-xs tracking-wide px-3 py-2"><span>MAP Report</span><span class="text-[0.65rem] normal-case tracking-normal opacity-75">MAP 報告</span></a>
+        <a href="/review" class="nav-link whitespace-nowrap flex flex-col items-center leading-tight font-semibold text-xs tracking-wide px-3 py-2"><span>Last Year Review</span><span class="text-[0.65rem] normal-case tracking-normal opacity-75">去年度回顧</span></a>
+      </div>
+    </div>
+  </div>
+  <div id="mobile-nav" class="xl:hidden border-t border-latte bg-cream">
+    <div class="px-4 py-3 flex flex-col gap-1">
+      <a href="/" class="nav-link font-semibold text-sm px-2 py-2">Home 首頁</a>
+      <a href="/schedule" class="nav-link active font-semibold text-sm px-2 py-2">Schedule 場次預告</a>
+      <a href="/departments" class="nav-link font-semibold text-sm px-2 py-2">Department Overview 部門總覽</a>
+      <a href="/ap-courses" class="nav-link font-semibold text-sm px-2 py-2">AP Courses AP 課程</a>
+      <a href="/map-report" class="nav-link font-semibold text-sm px-2 py-2">MAP Report and Analysis MAP 報告與分析</a>
+      <a href="/review" class="nav-link font-semibold text-sm px-2 py-2">Last Year Review 去年度回顧</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero-bg pt-32 pb-24 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-4xl mx-auto text-center">
+    <span class="section-kicker justify-center mb-4"><i class="fa-solid fa-calendar-days"></i> Kang Chiao International School, Linkou Campus</span>
+    <h1 class="font-display text-4xl font-bold mb-1">Schedule of Coffee with IPD</h1>
+    <p class="text-2xl font-display text-copperDark">咖啡會場次預告</p>
+  </div>
+</header>
+
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-20">
+
+  <div class="rounded-xl border border-dashed border-copper/50 bg-copper/5 text-sm text-espressoLight px-4 py-3 flex items-start gap-3 mb-8 italic">
+    <i class="fa-solid fa-circle-info text-copperDark mt-0.5"></i>
+    <p>Dates below are for Semester 1, SY26-27. Sign-up links are provided, welcome you to join the seminar — sign-up for each session closes at noon, two days before the event. A feedback survey link is also provided after each session.<br>以下為 115 學年度第一學期中學國際處咖啡會場次，活動下方有報名連結，歡迎家長們報名——各場次報名將於活動前兩天中午截止；活動後亦提供回饋調查連結。</p>
+  </div>
+
+  <div class="relative border-l-2 border-latte pl-8 space-y-8">
+
+    <div class="relative">
+      <span class="absolute -left-[2.55rem] top-0 icon-badge w-9 h-9 rounded-full"><i class="fa-solid fa-mug-saucer text-sm"></i></span>
+      <div class="resource-card p-5 flex flex-col gap-4">
+        <div class="flex flex-col sm:flex-row sm:items-start gap-4">
+          <div class="flex-shrink-0 text-center sm:w-24">
+            <div class="font-display text-2xl font-bold text-copperDark">9/11</div>
+            <div class="text-xs uppercase tracking-wide text-espressoLight">2026<br>9:30–11:00</div>
+          </div>
+          <div class="flex-1 sm:border-l sm:border-latte sm:pl-4">
+            <h3 class="font-display text-lg font-bold">Coffee with IPD — Comprehensive Session (English)</h3>
+            <p class="text-sm text-espressoLight">咖啡會－全方面主題課程介紹（英文科）</p>
+          </div>
+          <div class="flex-shrink-0 bg-latte/40 rounded-lg px-3 py-2 text-center sm:text-left">
+            <p class="text-xs font-bold text-espresso leading-tight">Parents of G7–G12 IP&amp;SP</p>
+            <p class="text-xs text-espressoLight leading-tight">留學班與雙語班 G7-G12 家長</p>
+          </div>
+        </div>
+        <div class="pt-3 border-t border-latte flex flex-wrap justify-end gap-2">
+          <a href="#" rel="noopener" data-expires-link="2026-09-09T12:00:00+08:00" data-expired-label="Registration Closed 報名已截止" class="inline-flex items-center justify-center gap-2 border border-dashed border-copper/60 text-copperDark hover:bg-copper hover:text-white hover:border-solid font-semibold text-xs rounded-full px-3 py-1.5 transition-colors">
+            <i class="fa-solid fa-link"></i> Sign-up link pending 報名連結待補
+          </a>
+          <a href="#" rel="noopener" class="inline-flex items-center justify-center gap-2 border border-dashed border-copper/60 text-copperDark hover:bg-copper hover:text-white hover:border-solid font-semibold text-xs rounded-full px-3 py-1.5 transition-colors">
+            <i class="fa-solid fa-comment-dots"></i> Feedback Survey 活動回饋待補
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative">
+      <span class="absolute -left-[2.55rem] top-0 icon-badge w-9 h-9 rounded-full"><i class="fa-solid fa-mug-saucer text-sm"></i></span>
+      <div class="resource-card p-5 flex flex-col gap-4">
+        <div class="flex flex-col sm:flex-row sm:items-start gap-4">
+          <div class="flex-shrink-0 text-center sm:w-24">
+            <div class="font-display text-2xl font-bold text-copperDark">9/18</div>
+            <div class="text-xs uppercase tracking-wide text-espressoLight">2026<br>9:30–11:00</div>
+          </div>
+          <div class="flex-1 sm:border-l sm:border-latte sm:pl-4">
+            <h3 class="font-display text-lg font-bold">Coffee with IPD — Comprehensive Session (IP Subjects)</h3>
+            <p class="text-sm text-espressoLight">咖啡會－全方面主題課程介紹（IP學科）</p>
+          </div>
+          <div class="flex-shrink-0 bg-latte/40 rounded-lg px-3 py-2 text-center sm:text-left">
+            <p class="text-xs font-bold text-espresso leading-tight">Parents of G7–G12 IP</p>
+            <p class="text-xs text-espressoLight leading-tight">留學班 G7-G12 家長</p>
+          </div>
+        </div>
+        <div class="pt-3 border-t border-latte flex flex-wrap justify-end gap-2">
+          <a href="#" rel="noopener" data-expires-link="2026-09-16T12:00:00+08:00" data-expired-label="Registration Closed 報名已截止" class="inline-flex items-center justify-center gap-2 border border-dashed border-copper/60 text-copperDark hover:bg-copper hover:text-white hover:border-solid font-semibold text-xs rounded-full px-3 py-1.5 transition-colors">
+            <i class="fa-solid fa-link"></i> Sign-up link pending 報名連結待補
+          </a>
+          <a href="#" rel="noopener" class="inline-flex items-center justify-center gap-2 border border-dashed border-copper/60 text-copperDark hover:bg-copper hover:text-white hover:border-solid font-semibold text-xs rounded-full px-3 py-1.5 transition-colors">
+            <i class="fa-solid fa-comment-dots"></i> Feedback Survey 活動回饋待補
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative">
+      <span class="absolute -left-[2.55rem] top-0 icon-badge w-9 h-9 rounded-full"><i class="fa-solid fa-mug-saucer text-sm"></i></span>
+      <div class="resource-card p-5 flex flex-col gap-4">
+        <div class="flex flex-col sm:flex-row sm:items-start gap-4">
+          <div class="flex-shrink-0 text-center sm:w-24">
+            <div class="font-display text-2xl font-bold text-copperDark">11/27</div>
+            <div class="text-xs uppercase tracking-wide text-espressoLight">2026<br>9:30–11:00</div>
+          </div>
+          <div class="flex-1 sm:border-l sm:border-latte sm:pl-4">
+            <h3 class="font-display text-lg font-bold">Coffee with IPD — MAP Assessment and Analysis</h3>
+            <p class="text-sm text-espressoLight">咖啡會－MAP成績說明及分析</p>
+          </div>
+          <div class="flex-shrink-0 bg-latte/40 rounded-lg px-3 py-2 text-center sm:text-left">
+            <p class="text-xs font-bold text-espresso leading-tight">Parents of G7–G12 IP&amp;SP</p>
+            <p class="text-xs text-espressoLight leading-tight">留學班與雙語班 G7-G12 家長</p>
+          </div>
+        </div>
+        <div class="pt-3 border-t border-latte flex flex-wrap justify-end gap-2">
+          <a href="#" rel="noopener" data-expires-link="2026-11-25T12:00:00+08:00" data-expired-label="Registration Closed 報名已截止" class="inline-flex items-center justify-center gap-2 border border-dashed border-copper/60 text-copperDark hover:bg-copper hover:text-white hover:border-solid font-semibold text-xs rounded-full px-3 py-1.5 transition-colors">
+            <i class="fa-solid fa-link"></i> Sign-up link pending 報名連結待補
+          </a>
+          <a href="#" rel="noopener" class="inline-flex items-center justify-center gap-2 border border-dashed border-copper/60 text-copperDark hover:bg-copper hover:text-white hover:border-solid font-semibold text-xs rounded-full px-3 py-1.5 transition-colors">
+            <i class="fa-solid fa-comment-dots"></i> Feedback Survey 活動回饋待補
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative">
+      <span class="absolute -left-[2.55rem] top-0 icon-badge w-9 h-9 rounded-full"><i class="fa-solid fa-mug-saucer text-sm"></i></span>
+      <div class="resource-card p-5 flex flex-col gap-4">
+        <div class="flex flex-col sm:flex-row sm:items-start gap-4">
+          <div class="flex-shrink-0 text-center sm:w-24">
+            <div class="font-display text-2xl font-bold text-copperDark">12/4</div>
+            <div class="text-xs uppercase tracking-wide text-espressoLight">2026<br>9:30–11:00</div>
+          </div>
+          <div class="flex-1 sm:border-l sm:border-latte sm:pl-4">
+            <h3 class="font-display text-lg font-bold">Coffee with IPD — Introduction to Advanced Placement for Parents</h3>
+            <p class="text-sm text-espressoLight">咖啡會－AP 課程說明會</p>
+          </div>
+          <div class="flex-shrink-0 bg-latte/40 rounded-lg px-3 py-2 text-center sm:text-left">
+            <p class="text-xs font-bold text-espresso leading-tight">Parents of G7–G12 IP</p>
+            <p class="text-xs text-espressoLight leading-tight">留學班家長</p>
+          </div>
+        </div>
+        <div class="pt-3 border-t border-latte flex flex-wrap justify-end gap-2">
+          <a href="#" rel="noopener" data-expires-link="2026-12-02T12:00:00+08:00" data-expired-label="Registration Closed 報名已截止" class="inline-flex items-center justify-center gap-2 border border-dashed border-copper/60 text-copperDark hover:bg-copper hover:text-white hover:border-solid font-semibold text-xs rounded-full px-3 py-1.5 transition-colors">
+            <i class="fa-solid fa-link"></i> Sign-up link pending 報名連結待補
+          </a>
+          <a href="#" rel="noopener" class="inline-flex items-center justify-center gap-2 border border-dashed border-copper/60 text-copperDark hover:bg-copper hover:text-white hover:border-solid font-semibold text-xs rounded-full px-3 py-1.5 transition-colors">
+            <i class="fa-solid fa-comment-dots"></i> Feedback Survey 活動回饋待補
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="bg-espresso text-cream/90">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 text-center">
+    <div class="font-display text-lg font-bold text-cream mb-1">Kang Chiao International School, Linkou Campus</div>
+    <div class="text-sm text-cream/70 mb-3">康橋國際學校 林口校區 中學部國際處</div>
+    <div class="text-sm text-cream/70">IPD, Secondary School</div>
+    <div class="text-sm text-cream/70">No. 55, Xinglin Rd., Linkou Dist., New Taipei City, 244 Taiwan</div>
+    <div class="text-sm text-cream/70">244新北市林口區興林路55號</div>
+  </div>
+  <div class="border-t border-cream/10 py-4 text-center text-xs text-cream/50">
+    &copy; Kang Chiao International School, Linkou Campus — IPD, Secondary School
+  </div>
+</footer>
+
+<script src="/assets/nav.js"></script>
+<script src="/assets/expiry.js"></script>
+</body>
+</html>
