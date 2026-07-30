@@ -1,16 +1,16 @@
 /* Coffee with IPD — shared design tokens & component styles */
 
 :root {
-  --espresso: #1C3552;
-  --espresso-light: #2E4F73;
-  --cream: #EEF1F4;
+  --espresso: #3C2A1E;
+  --espresso-light: #5A3E2B;
+  --cream: #EDECE8;
   --card: #FFFFFF;
-  --copper: #3E6D99;
-  --copper-dark: #2C516F;
-  --latte: #D7DEE5;
+  --copper: #5A3E2B;
+  --copper-dark: #3C2A1E;
+  --latte: #DAD8D2;
 }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; scroll-padding-top: 112px; }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'PingFang TC', 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
@@ -24,12 +24,12 @@ body {
 
 /* Nav */
 #site-nav.scrolled {
-  box-shadow: 0 2px 14px rgba(28, 53, 82, 0.08);
+  box-shadow: 0 2px 14px rgba(60, 42, 30, 0.08);
 }
 
 .nav-link {
   position: relative;
-  color: rgba(28, 53, 82, 0.65);
+  color: rgba(60, 42, 30, 0.65);
   transition: color 0.2s ease;
 }
 .nav-link:hover { color: var(--espresso); }
@@ -62,7 +62,7 @@ body {
 }
 .resource-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 28px rgba(28, 53, 82, 0.12);
+  box-shadow: 0 12px 28px rgba(60, 42, 30, 0.12);
   border-color: var(--copper);
 }
 
@@ -105,14 +105,14 @@ body {
 /* Hero — dark navy with white text */
 .hero-bg {
   background:
-    radial-gradient(circle at 12% 18%, rgba(62, 109, 153, 0.35), transparent 45%),
-    radial-gradient(circle at 88% 12%, rgba(62, 109, 153, 0.25), transparent 40%),
+    radial-gradient(circle at 12% 18%, rgba(90, 62, 43, 0.35), transparent 45%),
+    radial-gradient(circle at 88% 12%, rgba(90, 62, 43, 0.25), transparent 40%),
     var(--espresso) !important;
 }
 .hero-bg .section-kicker { color: rgba(255, 255, 255, 0.8) !important; }
 .hero-bg h1 { color: #fff !important; }
 .hero-bg p.font-display,
-.hero-bg p.text-copperDark { color: #BFD6EA !important; }
+.hero-bg p.text-copperDark { color: #E3D5C4 !important; }
 .hero-bg p:not(.font-display) { color: rgba(255, 255, 255, 0.85) !important; }
 
 /* Scrollbar-less chip row */
@@ -179,6 +179,25 @@ body {
   padding: 2rem 1.5rem;
 }
 
+/* Numbered section header (single-page layout) */
+.numbered-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 0.75rem;
+  background: var(--espresso);
+  color: #fff;
+  font-family: Georgia, 'Noto Serif TC', serif;
+  font-weight: 800;
+  font-size: 1.05rem;
+  flex-shrink: 0;
+}
+.section-anchor {
+  scroll-margin-top: 112px;
+}
+
 .embed-placeholder {
   position: absolute;
   inset: 0;
@@ -191,5 +210,5 @@ body {
   font-size: 0.8rem;
   text-align: center;
   padding: 1rem;
-  border-top: 1px dashed rgba(62, 109, 153, 0.4);
+  border-top: 1px dashed rgba(90, 62, 43, 0.4);
 }
