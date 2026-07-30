@@ -29,23 +29,29 @@
 </head>
 <body class="bg-cream text-espresso antialiased min-h-screen">
 
-<nav id="site-nav" class="fixed w-full bg-cream/90 backdrop-blur-sm z-40 border-b border-latte transition-shadow">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex items-center justify-between py-3">
-      <a href="index.html" class="flex items-center gap-2 sm:gap-3 min-w-0">
-        <img src="https://drive.google.com/thumbnail?id=14y7xTZLZqIOGmyDvJZmwi8trL5fXpQQ_&sz=w200" referrerpolicy="no-referrer" alt="Kang Chiao International School, Linkou Campus" class="h-8 w-auto flex-shrink-0">
-        <span class="font-display font-bold text-base sm:text-lg text-espresso tracking-wide truncate">Coffee with IPD</span>
-      </a>
-      <div class="hidden xl:flex items-center gap-1">
+<nav id="site-nav" class="fixed w-full z-40 transition-shadow">
+  <div class="bg-cream/95 backdrop-blur-sm border-b border-latte">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between py-3">
+        <a href="index.html" class="flex items-center gap-2 sm:gap-3 min-w-0">
+          <img src="https://drive.google.com/thumbnail?id=14y7xTZLZqIOGmyDvJZmwi8trL5fXpQQ_&sz=w200" referrerpolicy="no-referrer" alt="Kang Chiao International School, Linkou Campus" class="h-8 w-auto flex-shrink-0">
+          <span class="font-display font-bold text-base sm:text-lg text-espresso tracking-wide truncate">Coffee with IPD</span>
+        </a>
+        <button id="mobile-nav-toggle" class="xl:hidden text-espresso flex-shrink-0" aria-label="Toggle navigation" aria-expanded="false">
+          <i class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="hidden xl:block bg-latte/30 border-b border-latte">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-center gap-1">
         <a href="index.html" class="nav-link whitespace-nowrap flex flex-col items-center leading-tight font-semibold text-xs tracking-wide px-3 py-2"><span>Home</span><span class="text-[0.65rem] normal-case tracking-normal opacity-75">首頁</span></a>
         <a href="department-overview.html" class="nav-link whitespace-nowrap flex flex-col items-center leading-tight font-semibold text-xs tracking-wide px-3 py-2"><span>Department Overview</span><span class="text-[0.65rem] normal-case tracking-normal opacity-75">部門總覽</span></a>
         <a href="ap-courses.html" class="nav-link whitespace-nowrap flex flex-col items-center leading-tight font-semibold text-xs tracking-wide px-3 py-2"><span>AP Courses</span><span class="text-[0.65rem] normal-case tracking-normal opacity-75">AP 課程</span></a>
         <a href="map-report.html" class="nav-link whitespace-nowrap flex flex-col items-center leading-tight font-semibold text-xs tracking-wide px-3 py-2"><span>MAP Report</span><span class="text-[0.65rem] normal-case tracking-normal opacity-75">MAP 報告</span></a>
         <a href="last-year-review.html" class="nav-link active whitespace-nowrap flex flex-col items-center leading-tight font-semibold text-xs tracking-wide px-3 py-2"><span>Last Year Review</span><span class="text-[0.65rem] normal-case tracking-normal opacity-75">去年度回顧</span></a>
       </div>
-      <button id="mobile-nav-toggle" class="xl:hidden text-espresso flex-shrink-0" aria-label="Toggle navigation" aria-expanded="false">
-        <i class="fa-solid fa-bars text-xl"></i>
-      </button>
     </div>
   </div>
   <div id="mobile-nav" class="xl:hidden border-t border-latte bg-cream">
@@ -59,7 +65,7 @@
   </div>
 </nav>
 
-<header class="hero-bg pt-32 pb-10 px-4 sm:px-6 lg:px-8">
+<header class="hero-bg pt-32 pb-24 px-4 sm:px-6 lg:px-8">
   <div class="max-w-4xl mx-auto text-center">
     <span class="section-kicker justify-center mb-4"><i class="fa-solid fa-clock-rotate-left"></i> 114 學年度 SY25-26 Session Archive</span>
     <h1 class="font-display text-4xl font-bold mb-1">Last Year Review</h1>
@@ -67,7 +73,7 @@
   </div>
 </header>
 
-<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-6">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-6 mt-12">
   <div class="rounded-xl border border-dashed border-copper/50 bg-copper/5 text-sm text-espressoLight px-4 py-3 flex items-start gap-3">
     <i class="fa-solid fa-circle-info text-copperDark mt-0.5"></i>
     <p>Showing 114 學年度 (SY25-26) sessions. This page automatically archives on 2027/06/30, when it will be replaced by 115 學年度 content — <span data-countdown-to="2027-06-30T23:59:59+08:00">{days} days remaining</span>.<br>本頁顯示 114 學年度資料，將於 2027/06/30 自動下架並換上 115 學年度內容 — 距離下架尚有 <span data-countdown-to="2027-06-30T23:59:59+08:00">{days} 天</span>。</p>
