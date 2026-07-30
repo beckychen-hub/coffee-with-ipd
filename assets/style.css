@@ -177,8 +177,8 @@ body {
   font-size: 0.9rem;
   font-weight: 600;
   color: var(--espresso-light);
-  text-align: center;
-  padding: 2rem 1.5rem;
+  text-align: left;
+  padding: 1rem 1.25rem;
 }
 
 /* Numbered section header (single-page layout) */
