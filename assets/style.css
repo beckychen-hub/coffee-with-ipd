@@ -104,12 +104,15 @@ body {
   color: var(--copper-dark);
 }
 
-/* Hero — dark navy with white text */
+/* Hero — hand-drawn illustration background with dark scrim for text contrast */
 .hero-bg {
-  background:
-    radial-gradient(circle at 12% 18%, rgba(90, 62, 43, 0.35), transparent 45%),
-    radial-gradient(circle at 88% 12%, rgba(90, 62, 43, 0.25), transparent 40%),
-    var(--espresso) !important;
+  background-image:
+    linear-gradient(rgba(26, 17, 11, 0.55), rgba(26, 17, 11, 0.55)),
+    url("https://drive.google.com/thumbnail?id=1lIDIA_rcX_Z5SmMbndyQUNwr3QUA1VzE&sz=w2000") !important;
+  background-size: cover, cover;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-color: var(--espresso);
 }
 .hero-bg .section-kicker { color: rgba(255, 255, 255, 0.8) !important; }
 .hero-bg h1 { color: #fff !important; }
