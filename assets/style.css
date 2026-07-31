@@ -108,9 +108,9 @@ body {
 .hero-bg {
   background-image:
     linear-gradient(rgba(26, 17, 11, 0.55), rgba(26, 17, 11, 0.55)),
-    url("https://drive.google.com/thumbnail?id=1lIDIA_rcX_Z5SmMbndyQUNwr3QUA1VzE&sz=w2000") !important;
+    url("https://drive.google.com/thumbnail?id=1ppXLTFjtpHOTlNW9ZMApMwTfEiphDLcD&sz=w3000") !important;
   background-size: cover, cover;
-  background-position: center, center;
+  background-position: center, top;
   background-repeat: no-repeat, no-repeat;
   background-color: var(--espresso);
 }
