@@ -29,6 +29,20 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
+  // Per-link "opens on" gate: disable a sign-up link until it opens, and relabel it.
+  // <a href="https://..." data-opens-link="2026-08-31T00:00:00+08:00" data-pending-label="Opens 8/31 8/31開放">Sign up</a>
+  document.querySelectorAll('[data-opens-link]').forEach(function (a) {
+    var opensAt = new Date(a.getAttribute('data-opens-link'));
+    if (now < opensAt) {
+      var label = a.getAttribute('data-pending-label');
+      if (label) a.innerHTML = '<i class="fa-solid fa-clock"></i> ' + label;
+      a.removeAttribute('href');
+      a.removeAttribute('target');
+      a.classList.add('link-expired');
+      a.setAttribute('aria-disabled', 'true');
+    }
+  });
+
   // Countdown text: replace the token {days} with the number of days remaining until a target date.
   // <span data-countdown-to="2027-06-30T23:59:59+08:00">còn {days} days</span>
   document.querySelectorAll('[data-countdown-to]').forEach(function (el) {
